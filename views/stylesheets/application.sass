@@ -1,0 +1,55 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic)
+
+$blue:#3bbfce
+body
+  font-family: "Lucida Grande", Arial, Helvetica, sans
+  background-image: url(/images/bg.png)
+  width: 800px
+  margin: 0 auto
+  text-shadow: 1px 1px 0px #ffffff
+
+h1, h2
+  font-family: "PT Sans", sans-serif
+
+a
+  color: #336699
+  &:visited
+    color: #336699
+  &:hover
+    text-decoration: none
+    color: #0033CC
+
+@mixin left($dist)
+  float: left
+  margin-left: $dist
+  padding-left: $dist/2
+
+table
+  @include left(10)
+  th
+    color: $blue
+
+ul#menu
+  display: block
+  width: 100%
+  li
+    margin-left: 0
+    padding: 3px 15px
+    list-style: none
+    display: inline
+
+.board
+  width: 500px
+  height: 500px
+
+.user-board
+  @extend .board
+  border-color: $blue
+
+.opponent-board
+  @extend .board
+  border-color: red
+
+footer
+  margin: 30px auto
+  font-size: 80%

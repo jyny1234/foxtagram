@@ -1,0 +1,6 @@
+h1 Свежие фоточки #{@username}
+p Всего здесь #{@user_recent_media.count} штук
+- @user_recent_media.each do |media_item|
+  a href="/media/#{media_item.id}"
+    img src="#{media_item.images.thumbnail.url}"
+

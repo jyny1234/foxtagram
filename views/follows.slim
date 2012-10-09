@@ -1,0 +1,6 @@
+h1 #{@username} читает
+ul
+  - @user_follows.each do |user|
+    li
+      img src="#{user.profile_picture}" alt="#{user.username}"
+      #{user.username}

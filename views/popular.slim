@@ -1,0 +1,4 @@
+h1 Популярные фоточки
+- @media_popular.each do |media_item|
+    a href="/media/#{media_item.id}"
+      img src="#{media_item.images.thumbnail.url}"

@@ -1,0 +1,12 @@
+h1 Добро пожаловать в Инстаграм им. Фоксвеба!
+
+ul#menu
+  li: a href="/feed" Моя лента
+  li: a href="/popular" Популярные
+  li: a href="/follows" Друзья
+  li: a href="/oauth/connect" Войти в Instagram
+h1 Популярные фоточки
+- @media_popular.each do |media_item|
+    a href="/media/#{media_item.id}"
+      img src="#{media_item.images.thumbnail.url}"
+

@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title = @title
+    meta name="keywords" content="foxweb instagram"
+    meta name="author" content="foxweb"
+    script type="text/javascript" src="/javascripts/application.js"
+    link rel="stylesheet" href="/stylesheets/application.css"
+
+  body
+    #content
+      == yield
+
+    footer
+      | © #{@year} #{@author}.
+      |  This product uses the Instagram API but is not endorsed or certified by
+      ='
+      a href="http://instagr.am/" Instagram
+      |.

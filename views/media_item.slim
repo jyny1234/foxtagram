@@ -1,0 +1,6 @@
+h1 #{@media_item.caption.text}
+div#date #{@date}
+div#comments Коментов #{@media_item.comments.count}
+div#likes Лайков #{@media_item.likes.count}
+
+img src="#{@media_item.images.standard_resolution.url}"

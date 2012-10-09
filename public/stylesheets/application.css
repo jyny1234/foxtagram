@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic);
+body {
+  font-family: "Lucida Grande", Arial, Helvetica, sans;
+  background-image: url(/images/bg.png);
+  width: 800px;
+  margin: 0 auto;
+  text-shadow: 1px 1px 0px white; }
+
+h1, h2 {
+  font-family: "PT Sans", sans-serif; }
+
+a {
+  color: #336699; }
+  a:visited {
+    color: #336699; }
+  a:hover {
+    text-decoration: none;
+    color: #0033cc; }
+
+table {
+  float: left;
+  margin-left: 10;
+  padding-left: 5; }
+  table th {
+    color: #3bbfce; }
+
+ul#menu {
+  display: block;
+  width: 100%; }
+  ul#menu li {
+    margin-left: 0;
+    padding: 3px 15px;
+    list-style: none;
+    display: inline; }
+
+.board, .user-board, .opponent-board {
+  width: 500px;
+  height: 500px; }
+
+.user-board {
+  border-color: #3bbfce; }
+
+.opponent-board {
+  border-color: red; }
+
+footer {
+  margin: 30px auto;
+  font-size: 80%; }
